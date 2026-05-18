@@ -223,10 +223,13 @@
     <div class="wrap">
       <h2 class="reveal">Weekly Evidence Digest</h2>
       <p class="reveal">One email per week. The most important health research, explained clearly.</p>
-      <!-- TODO before launch: connect this form to an email provider (Buttondown / ConvertKit / Mailchimp). -->
-      <form action="#" method="post">
-        <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
-        <button type="submit">Subscribe</button>
+      <form action="https://justrealhealthfacts.us5.list-manage.com/subscribe/post?u=443b612b16f94be28c4e6f31f&amp;id=264da77b8b&amp;f_id=00e456e9f0" method="post" target="_blank">
+        <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="you@example.com" aria-label="Email address" required />
+        <!-- Mailchimp anti-bot honeypot — must remain present and empty; do not remove -->
+        <div aria-hidden="true" style="position:absolute;left:-5000px;">
+          <input type="text" name="b_443b612b16f94be28c4e6f31f_264da77b8b" tabindex="-1" value="" autocomplete="off" />
+        </div>
+        <button type="submit" name="subscribe">Subscribe</button>
       </form>
       <p class="fine">No spam. Unsubscribe anytime. We never sell your data.</p>
     </div>
