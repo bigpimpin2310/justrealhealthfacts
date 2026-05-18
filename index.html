@@ -2,120 +2,245 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="1_v-DOuAkhqEfPKhvVT1h366L8VFchSE8TjshJvOxmo" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Just Real Health Facts — Evidence-based health information</title>
-  <meta
-    name="description"
-    content="Just Real Health Facts is an independent health-education resource. Evidence-based health information. No spin. Just the facts."
-  />
+  <title>Just Real Health Facts — Health Claims Get Tested Here</title>
+  <meta name="description" content="Physician-reviewed evidence on supplements, nutrition, and wellness. No hype, no sponsored opinions — just the research." />
   <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://justrealhealthfacts.com/" />
   <meta property="og:title" content="Just Real Health Facts" />
-  <meta property="og:description" content="Evidence-based health information. No spin. Just the facts." />
+  <meta property="og:description" content="Physician-reviewed evidence on supplements, nutrition, and wellness. No hype. No sponsored opinions. Just the research." />
   <meta property="og:type" content="website" />
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="landing.css" />
 </head>
 <body>
 
-  <nav class="site-nav">
+  <nav class="nav">
     <div class="wrap">
-      <a class="brand" href="index.html">Just Real Health Facts</a>
-      <ul class="nav-links">
-        <li><a href="index.html" aria-current="page">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="disclosure.html">Disclosure</a></li>
+      <a class="brand" href="index.html">Just Real Health <span>Facts</span></a>
+      <ul>
+        <li><a class="navlink" href="#all-articles">Articles</a></li>
+        <li><a class="navlink" href="about.html">About</a></li>
+        <li><a class="navlink" href="disclosure.html">Disclosure</a></li>
       </ul>
     </div>
   </nav>
 
+  <!-- ===== HERO ===== -->
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow">Independent Health Education</p>
-      <h1>Just Real Health Facts</h1>
-      <p>Evidence-based health information. No spin. Just the facts.</p>
+      <h1>Health Claims Get Tested Here.</h1>
+      <p class="sub">Physician-reviewed evidence on supplements, nutrition, and wellness. No hype. No sponsored opinions. Just the research.</p>
+      <div class="hero-cta">
+        <a href="#all-articles" class="btn btn-gold">Read the Evidence &rarr;</a>
+        <a href="about.html" class="btn btn-outline">About Our Standards &rarr;</a>
+      </div>
+      <div class="trust-badges">
+        <span>🩺 Physician Reviewed</span>
+        <span>📚 Peer-Reviewed Sources Only</span>
+        <span>🚫 No Sponsored Content</span>
+        <span>⚠️ Full Drug Interactions Disclosed</span>
+      </div>
     </div>
   </header>
 
-  <main>
-    <!-- Featured / latest articles -->
-    <section>
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Latest Articles</h2>
-          <span class="note">Reviewed by a board-certified physician before publishing</span>
-        </div>
-        <div class="cards">
-          <article class="article-card placeholder">
-            <span class="tag">Metabolic Health</span>
-            <h3>First article in review</h3>
-            <p>Our opening evidence-based guide is being written and will appear here once medically reviewed.</p>
-          </article>
-          <article class="article-card placeholder">
-            <span class="tag">Supplements</span>
-            <h3>Second article in review</h3>
-            <p>Each guide cites its sources and distinguishes strong evidence from weak. Coming soon.</p>
-          </article>
-          <article class="article-card placeholder">
-            <span class="tag">Sleep</span>
-            <h3>Third article in review</h3>
-            <p>Plain-language summaries of what the research actually shows. Coming soon.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <!-- Categories -->
-    <section style="background:var(--soft);">
-      <div class="wrap">
-        <div class="section-head">
-          <h2>Topics We Cover</h2>
-        </div>
-        <div class="tiles">
-          <a class="tile" href="#"><h3>Supplements</h3><p>What the evidence supports — and what it doesn't.</p></a>
-          <a class="tile" href="#"><h3>Nutrition</h3><p>Food, diet patterns, and what holds up to scrutiny.</p></a>
-          <a class="tile" href="#"><h3>Sleep</h3><p>Sleep quality, habits, and aids that have data behind them.</p></a>
-          <a class="tile" href="#"><h3>Cognitive Health</h3><p>Focus, memory, and brain health across the lifespan.</p></a>
-          <a class="tile" href="#"><h3>Metabolic Health</h3><p>Blood sugar, weight, and metabolic markers.</p></a>
-          <a class="tile" href="#"><h3>Longevity</h3><p>Healthy aging and the science of living well longer.</p></a>
-          <a class="tile" href="#"><h3>Women's Health</h3><p>Evidence-based information across life stages.</p></a>
-          <a class="tile" href="#"><h3>Men's Health</h3><p>Evidence-based information across life stages.</p></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- Newsletter -->
-    <section>
-      <div class="wrap narrow">
-        <!-- TODO before launch: connect this form to an email provider (Buttondown / ConvertKit / Mailchimp). -->
-        <div class="newsletter">
-          <h2>Get the facts in your inbox</h2>
-          <p>New evidence-based guides, summarized plainly. No spam, unsubscribe anytime.</p>
-          <form action="#" method="post">
-            <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
-            <button type="submit">Subscribe</button>
-          </form>
-          <p class="fine">We never sell your email address.</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
+  <!-- ===== STATS BAR ===== -->
+  <section class="stats">
     <div class="wrap">
-      <p class="disclosure">
-        This site contains affiliate links. We may earn a commission when you
-        purchase through our links at no extra cost to you.
-      </p>
-      <ul class="foot-links">
+      <div class="grid">
+        <div class="stat"><div class="num" data-target="12">0</div><div class="label">Evidence Reviews Published</div></div>
+        <div class="stat"><div class="num" data-target="30" data-suffix="+">0</div><div class="label">Clinical Studies Cited</div></div>
+        <div class="stat"><div class="num" data-target="0">0</div><div class="label">Sponsored Articles</div></div>
+        <div class="stat"><div class="num" data-target="100" data-suffix="%">0</div><div class="label">Physician Reviewed</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FEATURED ARTICLES ===== -->
+  <section class="section">
+    <div class="wrap">
+      <h2 class="section-title reveal">Latest Evidence Reviews</h2>
+      <p class="section-intro reveal">Plain-language summaries of what the peer-reviewed research actually shows.</p>
+      <div class="featured-grid">
+        <a class="fcard reveal" href="berberine.html">
+          <span class="cat-badge c-metabolic">Metabolic Health</span>
+          <h3>Berberine: What the Clinical Evidence Actually Shows</h3>
+          <p>What the research shows on blood sugar, cholesterol, dosing, and the drug interactions that matter.</p>
+          <div class="meta"><span class="rt">⏱ 6 min read</span><span class="read-link">Read the Evidence &rarr;</span></div>
+        </a>
+        <a class="fcard reveal" href="nmn-supplements.html">
+          <span class="cat-badge c-heart">Heart &amp; Longevity</span>
+          <h3>NMN Supplements in 2026: What the Evidence Shows</h3>
+          <p>NAD+ precursors, dosing, quality markers, and an honest read on what short-term trials support.</p>
+          <div class="meta"><span class="rt">⏱ 4 min read</span><span class="read-link">Read the Evidence &rarr;</span></div>
+        </a>
+        <a class="fcard reveal" href="magnesium-glycinate-sleep.html">
+          <span class="cat-badge c-sleep">Sleep &amp; Stress</span>
+          <h3>Magnesium Glycinate for Sleep: What the Research Shows</h3>
+          <p>Why glycinate is the preferred form for sleep, and how to read an elemental-magnesium label.</p>
+          <div class="meta"><span class="rt">⏱ 5 min read</span><span class="read-link">Read the Evidence &rarr;</span></div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALL ARTICLES ===== -->
+  <section class="section" id="all-articles" style="background:var(--gray);">
+    <div class="wrap">
+      <h2 class="section-title reveal">All Evidence Reviews</h2>
+      <p class="section-intro reveal">Filter by category to find what you're looking for.</p>
+
+      <div class="tabs">
+        <button class="tab active" data-category="all">All Articles</button>
+        <button class="tab" data-category="metabolic">🩸 Metabolic Health</button>
+        <button class="tab" data-category="sleep">😴 Sleep &amp; Stress</button>
+        <button class="tab" data-category="brain">🧠 Brain &amp; Cognitive</button>
+        <button class="tab" data-category="heart">❤️ Heart &amp; Longevity</button>
+        <button class="tab" data-category="gut">🦠 Gut Health</button>
+        <button class="tab" data-category="mens">👨 Men's Health</button>
+        <button class="tab" data-category="womens">👩 Women's Health</button>
+      </div>
+
+      <div class="article-grid">
+        <a class="acard" data-category="metabolic" href="berberine.html">
+          <span class="cat-badge c-metabolic">Metabolic Health</span>
+          <h3>Berberine: What the Clinical Evidence Actually Shows</h3>
+          <p>Blood sugar, cholesterol, dosing, and drug interactions — what the research supports.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="metabolic" href="berberine-blood-sugar-bundle.html">
+          <span class="cat-badge c-metabolic">Metabolic Health</span>
+          <h3>Berberine with Ceylon Cinnamon and Gymnema</h3>
+          <p>What combination blood-sugar formulas add — and the monitoring that matters.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="metabolic" href="glp1-support-supplements.html">
+          <span class="cat-badge c-metabolic">Metabolic Health</span>
+          <h3>On Ozempic or Wegovy? Supplements for Common Side Effects</h3>
+          <p>Evidence-based nutritional support during GLP-1 therapy — not a medication replacement.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="sleep" href="magnesium-glycinate-sleep.html">
+          <span class="cat-badge c-sleep">Sleep &amp; Stress</span>
+          <h3>Magnesium Glycinate for Sleep</h3>
+          <p>Why glycinate is the preferred form, and what clinical trials show.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="sleep" href="l-theanine-sleep.html">
+          <span class="cat-badge c-sleep">Sleep &amp; Stress</span>
+          <h3>L-Theanine for Sleep and Anxiety</h3>
+          <p>Sleep, anxiety, focus, and the well-established caffeine synergy.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="sleep" href="ashwagandha-ksm66.html">
+          <span class="cat-badge c-sleep">Sleep &amp; Stress</span>
+          <h3>Ashwagandha KSM-66: What the Clinical Evidence Shows</h3>
+          <p>Stress, cortisol, testosterone, and sleep — with the thyroid caution that matters.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="brain" href="lions-mane-mushroom.html">
+          <span class="cat-badge c-brain">Brain &amp; Cognitive</span>
+          <h3>Lion's Mane Mushroom: Evidence for Brain Health</h3>
+          <p>Nerve growth factor, cognition, and why product quality is critical here.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="heart" href="coq10-ubiquinol.html">
+          <span class="cat-badge c-heart">Heart &amp; Longevity</span>
+          <h3>CoQ10 and Ubiquinol: Heart Health and Statins</h3>
+          <p>Cardiovascular trials, statin depletion, and ubiquinol vs ubiquinone.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="heart" href="nmn-supplements.html">
+          <span class="cat-badge c-heart">Heart &amp; Longevity</span>
+          <h3>NMN Supplements in 2026: What the Evidence Shows</h3>
+          <p>NAD+ precursors, dosing, quality markers, and what short-term trials show.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="gut" href="probiotic-gut-health.html">
+          <span class="cat-badge c-gut">Gut Health</span>
+          <h3>Probiotics for Gut Health: What the Clinical Evidence Shows</h3>
+          <p>Strain selection, CFU counts, and the conditions with the strongest evidence.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="mens" href="mens-health.html">
+          <span class="cat-badge c-mens">Men's Health</span>
+          <h3>Testosterone and Men's Health: What the Evidence Shows</h3>
+          <p>Natural testosterone support — zinc, vitamin D, ashwagandha, fenugreek — plus prostate health.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <a class="acard" data-category="womens" href="womens-health.html">
+          <span class="cat-badge c-womens">Women's Health</span>
+          <h3>Menopause and Women's Hormonal Health: Evidence-Based Options</h3>
+          <p>Black cohosh, DIM, chasteberry, and ashwagandha — what the evidence shows for menopause.</p>
+          <span class="read-btn">Read &rarr;</span>
+        </a>
+        <div class="empty-cat" style="display:none;">Evidence reviews in this category are coming soon.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY TRUST US ===== -->
+  <section class="section trust">
+    <div class="wrap">
+      <h2 class="section-title reveal">Why Trust Us</h2>
+      <div class="trust-grid">
+        <div class="trust-col reveal">
+          <div class="ico">🩺</div>
+          <h3>Physician Authored</h3>
+          <p>A board-certified physician reviews all clinical content before publication. Evidence claims are checked, not assumed.</p>
+        </div>
+        <div class="trust-col reveal">
+          <div class="ico">📚</div>
+          <h3>Evidence Standards</h3>
+          <p>We cite peer-reviewed studies only. No anecdotes. No influencer claims. When the evidence is weak, we say so.</p>
+        </div>
+        <div class="trust-col reveal">
+          <div class="ico">🔍</div>
+          <h3>Full Transparency</h3>
+          <p>Drug interactions, contraindications, and evidence limitations are disclosed on every article — not buried.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NEWSLETTER ===== -->
+  <section class="section newsletter">
+    <div class="wrap">
+      <h2 class="reveal">Weekly Evidence Digest</h2>
+      <p class="reveal">One email per week. The most important health research, explained clearly.</p>
+      <!-- TODO before launch: connect this form to an email provider (Buttondown / ConvertKit / Mailchimp). -->
+      <form action="#" method="post">
+        <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+      <p class="fine">No spam. Unsubscribe anytime. We never sell your data.</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="wrap">
+      <ul class="flinks">
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+        <li><a href="disclosure.html">Disclosure</a></li>
+        <li><a href="#all-articles">All Articles</a></li>
       </ul>
-      <p class="copyright">
-        &copy; 2026 Just Real Health Facts &middot; Educational content only —
-        not a substitute for professional medical advice.
+      <p class="fdisc">
+        This site contains affiliate links. We may earn a commission when you
+        purchase through our links at no extra cost to you.
+        <a href="disclosure.html">See our Disclosure page.</a>
+      </p>
+      <p class="fcopy">
+        &copy; 2026 Just Real Health Facts &middot; Content reviewed by a
+        board-certified physician. For educational purposes only.
       </p>
     </div>
   </footer>
 
+  <script src="landing.js"></script>
 </body>
 </html>
