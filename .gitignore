@@ -1,0 +1,7 @@
+# Stray directory created by tooling that wrote a literal "${HOME}" path —
+# never commit it to the site repo.
+${HOME}/
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db

@@ -6,166 +6,116 @@
   <title>Just Real Health Facts — Evidence-based health information</title>
   <meta
     name="description"
-    content="Just Real Health Facts is an independent health-education resource that turns peer-reviewed research and clinical guidelines into clear, plain-language explanations. Evidence-based health information. No spin. Just the facts."
+    content="Just Real Health Facts is an independent health-education resource. Evidence-based health information. No spin. Just the facts."
   />
   <meta name="robots" content="index, follow" />
   <meta property="og:title" content="Just Real Health Facts" />
-  <meta
-    property="og:description"
-    content="Evidence-based health information. No spin. Just the facts."
-  />
+  <meta property="og:description" content="Evidence-based health information. No spin. Just the facts." />
   <meta property="og:type" content="website" />
-  <style>
-    :root {
-      --ink: #1f2937;
-      --muted: #5b6573;
-      --accent: #0f766e;
-      --bg: #f6f8f9;
-      --card: #ffffff;
-      --line: #e3e8ea;
-    }
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    html { -webkit-text-size-adjust: 100%; }
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-        Helvetica, Arial, sans-serif;
-      color: var(--ink);
-      background: var(--bg);
-      line-height: 1.65;
-      -webkit-font-smoothing: antialiased;
-    }
-    .wrap { max-width: 760px; margin: 0 auto; padding: 0 1.5rem; }
-
-    header {
-      background: linear-gradient(160deg, #0f766e 0%, #115e59 100%);
-      color: #fff;
-      padding: 4.5rem 0 4rem;
-      text-align: center;
-    }
-    .eyebrow {
-      font-size: 0.78rem;
-      font-weight: 700;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: #a7f3d0;
-      margin-bottom: 1rem;
-    }
-    h1 {
-      font-size: clamp(2.1rem, 6vw, 3.1rem);
-      font-weight: 800;
-      letter-spacing: -0.02em;
-      line-height: 1.15;
-    }
-    .tagline {
-      margin-top: 1rem;
-      font-size: clamp(1.05rem, 2.6vw, 1.3rem);
-      font-weight: 500;
-      color: #d7f0ec;
-    }
-
-    main { padding: 3.5rem 0; }
-    .card {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 14px;
-      padding: 2.25rem;
-    }
-    .card h2 {
-      font-size: 1.25rem;
-      font-weight: 700;
-      margin-bottom: 0.85rem;
-    }
-    .card p { color: var(--muted); font-size: 1.03rem; }
-    .card p + p { margin-top: 0.9rem; }
-
-    .principles {
-      margin-top: 2rem;
-      display: grid;
-      gap: 1rem;
-      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-    }
-    .principle {
-      background: var(--card);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      padding: 1.4rem;
-    }
-    .principle h3 {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--accent);
-      margin-bottom: 0.35rem;
-    }
-    .principle p { font-size: 0.95rem; color: var(--muted); }
-
-    footer {
-      border-top: 1px solid var(--line);
-      padding: 2rem 0;
-      text-align: center;
-      color: var(--muted);
-      font-size: 0.88rem;
-    }
-    footer a { color: var(--accent); text-decoration: none; }
-  </style>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Just Real Health Facts</a>
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="disclosure.html">Disclosure</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
     <div class="wrap">
       <p class="eyebrow">Independent Health Education</p>
       <h1>Just Real Health Facts</h1>
-      <p class="tagline">
-        Evidence-based health information. No spin. Just the facts.
-      </p>
+      <p>Evidence-based health information. No spin. Just the facts.</p>
     </div>
   </header>
 
   <main>
-    <div class="wrap">
-      <section class="card">
-        <h2>About this site</h2>
-        <p>
-          Just Real Health Facts is an independent health-education resource.
-          We turn peer-reviewed research and clinical guidelines into clear,
-          plain-language explanations of everyday health questions &mdash;
-          without the hype, the fear, or the sales pitch.
-        </p>
-        <p>
-          Every article cites its sources. When the evidence is strong, we
-          say so. When it is mixed or uncertain, we say that too. Our goal is
-          simple: help you understand what the science actually shows so you
-          can make informed decisions and talk them through with a qualified
-          healthcare professional.
-        </p>
-      </section>
-
-      <div class="principles">
-        <div class="principle">
-          <h3>Evidence first</h3>
-          <p>Every claim traces back to published research or clinical guidance.</p>
+    <!-- Featured / latest articles -->
+    <section>
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Latest Articles</h2>
+          <span class="note">Reviewed by a board-certified physician before publishing</span>
         </div>
-        <div class="principle">
-          <h3>Plain language</h3>
-          <p>Clear explanations anyone can read &mdash; no jargon, no hype.</p>
-        </div>
-        <div class="principle">
-          <h3>Full disclosure</h3>
-          <p>We show conflicting data honestly and disclose any affiliate links.</p>
+        <div class="cards">
+          <article class="article-card placeholder">
+            <span class="tag">Metabolic Health</span>
+            <h3>First article in review</h3>
+            <p>Our opening evidence-based guide is being written and will appear here once medically reviewed.</p>
+          </article>
+          <article class="article-card placeholder">
+            <span class="tag">Supplements</span>
+            <h3>Second article in review</h3>
+            <p>Each guide cites its sources and distinguishes strong evidence from weak. Coming soon.</p>
+          </article>
+          <article class="article-card placeholder">
+            <span class="tag">Sleep</span>
+            <h3>Third article in review</h3>
+            <p>Plain-language summaries of what the research actually shows. Coming soon.</p>
+          </article>
         </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Categories -->
+    <section style="background:var(--soft);">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Topics We Cover</h2>
+        </div>
+        <div class="tiles">
+          <div class="tile"><h3>Supplements</h3><p>What the evidence supports — and what it doesn't.</p></div>
+          <div class="tile"><h3>Nutrition</h3><p>Food, diet patterns, and what holds up to scrutiny.</p></div>
+          <div class="tile"><h3>Sleep</h3><p>Sleep quality, habits, and aids that have data behind them.</p></div>
+          <div class="tile"><h3>Cognitive Health</h3><p>Focus, memory, and brain health across the lifespan.</p></div>
+          <div class="tile"><h3>Metabolic Health</h3><p>Blood sugar, weight, and metabolic markers.</p></div>
+          <div class="tile"><h3>Longevity</h3><p>Healthy aging and the science of living well longer.</p></div>
+          <div class="tile"><h3>Women's Health</h3><p>Evidence-based information across life stages.</p></div>
+          <div class="tile"><h3>Men's Health</h3><p>Evidence-based information across life stages.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section>
+      <div class="wrap narrow">
+        <!-- TODO before launch: connect this form to an email provider (Buttondown / ConvertKit / Mailchimp). -->
+        <div class="newsletter">
+          <h2>Get the facts in your inbox</h2>
+          <p>New evidence-based guides, summarized plainly. No spam, unsubscribe anytime.</p>
+          <form action="#" method="post">
+            <input type="email" name="email" placeholder="you@example.com" aria-label="Email address" required />
+            <button type="submit">Subscribe</button>
+          </form>
+          <p class="fine">We never sell your email address.</p>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <footer>
+  <footer class="site-footer">
     <div class="wrap">
-      <p>
-        &copy; 2026 Just Real Health Facts &middot; An independent
-        health-education resource.
+      <p class="disclosure">
+        This site contains affiliate links. We may earn a commission when you
+        purchase through our links at no extra cost to you.
       </p>
-      <p style="margin-top: 0.4rem;">
-        Educational content only &mdash; not a substitute for professional
-        medical advice.
+      <ul class="foot-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+      </ul>
+      <p class="copyright">
+        &copy; 2026 Just Real Health Facts &middot; Educational content only —
+        not a substitute for professional medical advice.
       </p>
     </div>
   </footer>
+
 </body>
 </html>
