@@ -1,0 +1,5 @@
+# Internal marketing content — version-controlled in git, but excluded from the
+# public Vercel deployment so these files are NOT served at justrealhealthfacts.com.
+twitter-content.md
+medium-posts.md
+newsletter-template.html
