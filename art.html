@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="1_v-DOuAkhqEfPKhvVT1h366L8VFchSE8TjshJvOxmo" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HealthVibeStudio — Medical &amp; Health Art Prints</title>
+  <meta
+    name="description"
+    content="Original health and medical art prints from HealthVibeStudio — designed for clinical spaces, physician offices, and healthcare professionals. Available on Etsy."
+  />
+  <meta name="robots" content="index, follow" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    /* ---- art gallery (page-specific) ---- */
+    .art-grid {
+      display: grid;
+      gap: 1.4rem;
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .art-card {
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      overflow: hidden;
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+    }
+    .art-card:hover {
+      border-color: #d4a820;
+      box-shadow: 0 6px 22px rgba(13, 43, 78, 0.12);
+      transform: translateY(-2px);
+    }
+    .art-thumb {
+      aspect-ratio: 4 / 5;
+      background:
+        repeating-linear-gradient(
+          135deg, rgba(212, 168, 32, 0.06) 0 14px, transparent 14px 28px),
+        linear-gradient(160deg, #0d2b4e 0%, #173a63 100%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 1.4rem;
+      color: #fff;
+    }
+    .art-thumb .frame {
+      border: 2px solid #d4a820;
+      border-radius: 8px;
+      padding: 1.1rem 1.2rem;
+    }
+    .art-thumb .frame span {
+      display: block;
+      font-size: 0.66rem;
+      font-weight: 700;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #d4a820;
+    }
+    .art-thumb .frame strong {
+      display: block;
+      margin-top: 0.4rem;
+      font-size: 1.02rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+    .art-thumb .ph-note {
+      margin-top: 0.9rem;
+      font-size: 0.66rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #9db4d0;
+    }
+    .art-body {
+      padding: 1.2rem 1.25rem 1.35rem;
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+    .art-body h3 {
+      font-size: 1.04rem;
+      font-weight: 800;
+      color: #0d2b4e;
+      line-height: 1.32;
+    }
+    .art-body p {
+      font-size: 0.9rem;
+      color: var(--navy-2);
+      margin-top: 0.4rem;
+      flex: 1;
+    }
+    .art-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 1rem;
+      gap: 0.8rem;
+    }
+    .art-price {
+      font-size: 1.1rem;
+      font-weight: 800;
+      color: #0d2b4e;
+    }
+    .etsy-btn {
+      display: inline-block;
+      padding: 0.55rem 1rem;
+      background: #d4a820;
+      color: #0d2b4e;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 800;
+      text-decoration: none;
+      white-space: nowrap;
+      transition: background 0.15s;
+    }
+    .etsy-btn:hover { background: #c0950f; }
+    .art-note {
+      margin: 2.5rem 0 0.5rem;
+      padding: 1.15rem 1.35rem;
+      background: var(--soft);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      font-size: 0.85rem;
+      color: var(--navy-2);
+      text-align: center;
+    }
+    .shop-cta {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .shop-cta a {
+      display: inline-block;
+      padding: 0.85rem 1.8rem;
+      background: #0d2b4e;
+      color: #fff;
+      border-radius: 9px;
+      font-weight: 800;
+      font-size: 0.95rem;
+      text-decoration: none;
+    }
+    .shop-cta a:hover { background: #173a63; }
+    @media (max-width: 860px) {
+      .art-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 540px) {
+      .art-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="site-nav">
+    <div class="wrap">
+      <a class="brand" href="index.html">Just Real Health Facts</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="disclosure.html">Disclosure</a></li>
+        <li><a href="art.html" aria-current="page">Art Prints</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="wrap">
+      <p class="eyebrow">HealthVibeStudio</p>
+      <h1>Where Medicine Meets Art</h1>
+      <p>
+        Original health and medical art prints designed for clinical spaces,
+        physician offices, and healthcare professionals.
+      </p>
+    </div>
+  </header>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <h2>The Collection</h2>
+        <span class="note">9 designs &middot; printed to order &middot; sold on Etsy</span>
+      </div>
+
+      <div class="art-grid">
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 01</span><strong>Your Body Hears Everything</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>Your Body Hears Everything</h3>
+            <p>Minimalist navy-and-gold typographic poster on the mind-body connection — a calm statement piece for any wellness space.</p>
+            <div class="art-meta">
+              <span class="art-price">$24</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 02</span><strong>Anatomy of the Heart</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>Anatomy of the Heart</h3>
+            <p>Fine-line anatomical heart intertwined with botanical stems — scientific illustration meets elegant line art.</p>
+            <div class="art-meta">
+              <span class="art-price">$28</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 03</span><strong>The Heart of Healthcare</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>The Heart of Healthcare</h3>
+            <p>A teal-and-white nurse appreciation badge with an EKG heartbeat motif — a thoughtful gift for nurses.</p>
+            <div class="art-meta">
+              <span class="art-price">$22</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 04</span><strong>For the Endorphins</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>For the Endorphins</h3>
+            <p>Retro varsity athletic graphic for the run club crowd — bold navy block lettering with vintage gold accents.</p>
+            <div class="art-meta">
+              <span class="art-price">$24</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 05</span><strong>It's OK Not to Be OK</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>It's OK Not to Be OK</h3>
+            <p>Soft pastel watercolor mental-health print with a gentle reminder to ask for help — calming and reassuring.</p>
+            <div class="art-meta">
+              <span class="art-price">$26</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 06</span><strong>First, Do No Harm</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>First, Do No Harm</h3>
+            <p>A classic line from the Hippocratic tradition set in refined serif typography — a quiet centerpiece for a physician's office.</p>
+            <div class="art-meta">
+              <span class="art-price">$24</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 07</span><strong>The Krebs Cycle</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>The Krebs Cycle</h3>
+            <p>Vintage-style biochemistry diagram of cellular respiration — a handsome conversation piece for labs and classrooms.</p>
+            <div class="art-meta">
+              <span class="art-price">$32</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 08</span><strong>Neuron in Bloom</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>Neuron in Bloom</h3>
+            <p>A single neuron rendered as delicate botanical line art — where neuroscience meets the natural world.</p>
+            <div class="art-meta">
+              <span class="art-price">$28</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="art-card">
+          <div class="art-thumb">
+            <div class="frame"><span>Print 09</span><strong>Caffeine Molecule</strong></div>
+            <div class="ph-note">Preview on Etsy</div>
+          </div>
+          <div class="art-body">
+            <h3>Caffeine Molecule</h3>
+            <p>Minimalist molecular structure print — a clean, witty piece for break rooms, kitchens, and coffee lovers.</p>
+            <div class="art-meta">
+              <span class="art-price">$20</span>
+              <a class="etsy-btn" href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">View on Etsy &rarr;</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="shop-cta">
+        <a href="https://www.etsy.com/shop/HealthVibeStudio" target="_blank" rel="noopener">Visit the full HealthVibeStudio shop on Etsy &rarr;</a>
+      </div>
+
+      <p class="art-note">
+        All artwork created under original creative direction. AI-assisted
+        design. Commercial rights owned by HealthVibeStudio.
+      </p>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p class="disclosure">
+        HealthVibeStudio art prints are sold through Etsy. Just Real Health
+        Facts may earn a commission on qualifying purchases at no extra cost
+        to you.
+      </p>
+      <ul class="foot-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="disclosure.html">Affiliate Disclosure</a></li>
+        <li><a href="art.html">Art Prints</a></li>
+      </ul>
+      <p class="copyright">
+        &copy; 2026 Just Real Health Facts &middot; Educational content only —
+        not a substitute for professional medical advice.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
